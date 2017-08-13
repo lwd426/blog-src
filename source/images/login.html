@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+</head>
+<body>
+<header class="header">
+    <section>
+        <a class="active">登录</a>
+        <span>&nbsp;|&nbsp;</span>
+        <a>注册</a>
+    </section>
+</header>
+<section class="content">
+    <article class="dialog">
+        <header>
+            <div class="title">登&nbsp;录</div>
+            <div class="right">
+                <a class="active">返回首页</a>|
+                <a>忘记密码？</a>
+            </div>
+        </header>
+        <section>
+            <div class="login"><input type="text" class="text" placeholder="请输入登录名/手机号"/></div>
+            <div class="password">  <div class="text">请输入登录密码</div></div>
+            <div class="validate"><div class="validinput">  <div class="input">请输入验证码</div></div><div class="validimg"></div></div>
+            <span class="alert">※ 密码或验证码错误 !</span>
+            <button class="loginBtn">登&nbsp;&nbsp;录</button>
+            <span class="logintype"><div class="left"><input type="checkbox"/>自动登录</div><div class="right">手机验证登录</div></span>
+        </section>
+        <footer>免费注册</footer>
+    </article>
+
+</section>
+<footer class="footer"><p><a style="margin-right:20px;">天创信用官网</a>|<a style="margin-left:20px;margin-right:30px">关于天创</a><span style="background: url('../images/phone.png') no-repeat;background-size:16px;"><span style="padding-left:28px;">400-1812-600</span></span><a style="margin-left: 70px;margin-right: 8px;">天创信用服务有限公司</a><span>湘ICP备15018736</span></p></footer>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script>
+    $(function(){
+        $(".header section a").click(function(){
+            $(this).parent().children('a').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $(".dialog header .right a").click(function(){
+            $(this).parent().children('a').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+</body>
+</html>
