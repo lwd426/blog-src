@@ -9,7 +9,7 @@ categories: 后端框架
 ### 题记
 很常用的一个场景：我们做用户权限验证的时候，势必要用到session。在node下，最好用的应该就是express-session了。以下记录下它的使用方法。
 
->express-session 是基于express框专门用于处理session的中间件。这里不谈express-session怎么安装，只给出相应的实例代码。另外，`session的认证机制离不开cookie`（原因见我的另一篇[session和cookie](http://lwd426.com/2013/02/20/session/)），需要同时使用cookieParser 中间件，有关的介绍可以专门参考https://github.com/expressjs/session/blob/master/README.md，或者参考http://blog.modulus.io/nodejs-and-express-sessions，这个博客上讲的比较清楚。
+>express-session 是基于express框专门用于处理session的中间件。这里不谈express-session怎么安装，只给出相应的实例代码。另外，`session的认证机制离不开cookie`（原因见我的另一篇[session和cookie](http://blog.lwdle.xin/2013/02/20/session/)），需要同时使用cookieParser 中间件，有关的介绍可以专门参考https://github.com/expressjs/session/blob/master/README.md，或者参考http://blog.modulus.io/nodejs-and-express-sessions，这个博客上讲的比较清楚。
 <!-- more -->
 ### 简单实例
 
